@@ -816,3 +816,27 @@ body {
         font-size: 1rem!important;
     }
 }
+.audio {
+    width: 120px; /* Kích thước vuông nhỏ */
+    height: 20px;
+    /*position: fixed;Dùng position fixed để định vị */
+    left: 10%; /* Khoảng cách từ cạnh trái màn hình */
+    top: 5%; /* Khoảng cách từ cạnh trên màn hình */
+  }
+  .audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    border: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+.audio::-webkit-media-controls-current-time-display,
+.audio::-webkit-media-controls-time-remaining-display,
+.audio::-webkit-media-controls-timeline,
+.audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+  
